@@ -1,0 +1,14 @@
+.company-name {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.under-construction {
+    margin-top: 80px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.under-construction i {
+    margin-right: 15px;
+}

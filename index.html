@@ -2,8 +2,39 @@
 <html>
 <head>
 	<title>DeviveTech</title>
+	<link rel="stylesheet" type="text/css" href="jquery.fullpage.css" />
+
+	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullpage.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	<!-- Compiled and minified JavaScript -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	
+	<link rel="stylesheet" href="home.css">
+
 </head>
 <body>
-Hello world
+	<div id="fullpage">
+		<div class="section">
+			<h1 class="center company-name">DeviveTech</h1>
+			<h1 class="center under-construction"><i class="fa fa-wrench"></i>Site Under Construction</h1>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {			
+			$('#fullpage').fullpage({
+				sectionsColor: ['#FFA726']
+			});
+		});
+	</script>
 </body>
 </html>
