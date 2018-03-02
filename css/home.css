@@ -13,5 +13,6 @@
     background-image: url('/img/home3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
     height: 100%;
 }
