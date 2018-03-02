@@ -1,14 +1,70 @@
-.company-name {
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 250px;
+    background: #f7f7f7;
     color: #fff;
-    font-size: 4rem;
-    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s;
 }
 
-.under-construction {
-    margin-top: 80px;
-    font-family: 'Rajdhani', sans-serif;
+.sidebar-header {
+    padding: 60px;
 }
 
-.under-construction i {
-    margin-right: 15px;
+.sidebar-menu {
+    padding: 0 70px;
+}
+.sidebar-menu a{
+    color: #3F51B5;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.sidebar-menu a.active{
+    background-color: #303F9F;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.sidebar-footer {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sidebar-footer .social-icons{
+    color: #303F9F;
+    padding: 2px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+#sidebarCollapse {
+    display: none;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse {
+        display: block;
+    }
 }
