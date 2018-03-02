@@ -13,4 +13,9 @@ $(document).ready(function () {
     $('.social-icons.linkedin').attr('href', data.linkedin);
   });
 
+  $('.sidebar-menu a').click(function (ev) {
+    $('.sidebar-menu a').removeClass('active');
+    $(this).addClass('active');
+  });
+
 })
