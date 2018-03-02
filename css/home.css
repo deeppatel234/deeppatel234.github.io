@@ -15,4 +15,14 @@
     background-repeat: no-repeat;
     background-position: center; 
     height: 100%;
+    padding: 70px;
+}
+
+.home-page .title {
+    font-size: 30px;
+    color: var(--white-text-color);
+}
+
+.typewrite {
+    color: #fff;
 }
