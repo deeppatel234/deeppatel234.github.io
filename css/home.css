@@ -23,6 +23,31 @@
     color: var(--white-text-color);
 }
 
+.home-page .title p {
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    line-height: 63px;
+}
+
+.home-page .title .firstname {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+.home-page .title .lastname {
+    font-family: 'Josefin Slab', serif;
+    font-size: 60px;
+}
+
+.home-page .title .hi {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-page .title .typewrite {
+    font-family: 'Jura', sans-serif;
+    font-size: 45px;
+}
+
 .typewrite {
     color: #fff;
 }
