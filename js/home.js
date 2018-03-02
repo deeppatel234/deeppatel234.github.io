@@ -18,4 +18,13 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  let currentPage = window.location.hash
+
+  if (currentPage) {
+    let $ele = $(`.sidebar-menu a[href="${currentPage}"]`)
+    if ($ele) {
+      $('.sidebar-menu a').removeClass('active');
+      $($ele).addClass('active');
+    }
+  }
 })
