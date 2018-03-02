@@ -1,16 +1,14 @@
 #sidebar {
     width: 280px;
+    padding: 50px;
     z-index: 999;
     background: var(--sidebar-bg-color); 
     transition: all 0.3s;
 }
 
-.sidebar-header {
-    padding: 50px;
-}
-
 .sidebar-menu {
-    padding: 0 45px;
+    margin-top: 25px;
+    padding: 10px;
 }
 .sidebar-menu a{
     color: var(--main-color);
@@ -27,8 +25,7 @@
 }
 
 .sidebar-footer {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 40px;
 }
 
 .sidebar-footer .social-icons{
@@ -46,7 +43,7 @@
 
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -280px;
     }
     #sidebar.active {
         margin-left: 0;
