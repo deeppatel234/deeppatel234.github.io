@@ -6,17 +6,46 @@ $(document).ready(function () {
   })
 
   $.getJSON('data.json', function (data) {
+    replaceData(data);
+  });
+
+  function replaceData (data) {
     $('.home-page .title .firstname').text(data.firstName);
     $('.home-page .title .lastname').text(data.lastName);
     $('.social-icons.facebook').attr('href', data.facebook);
     $('.social-icons.github').attr('href', data.github);
     $('.social-icons.linkedin').attr('href', data.linkedin);
-  });
+    $('.contacts-contant span.address').text(data.address);
+    $('.contacts-contant span.mobile').text(data.mobile);
+    $('.contacts-contant span.email').text(data.email);
+    $('.contacts-contant a.email-mailto').attr(`mailto:${data.email}`);
+
+    data.work.forEach(element => {
+      $('.work-timeline').append(timelineTemplate(element));
+    });
+
+    data.education.forEach(element => {
+      $('.education-timeline').append(timelineTemplate(element));
+    });
+  }
 
   $('.sidebar-menu a').click(function (ev) {
     $('.sidebar-menu a').removeClass('active');
     $(this).addClass('active');
   });
+
+  function timelineTemplate (param) {
+    return `<div class="timeline card">
+        <div class="card-body">
+          <h6 class="card-title">
+            <span class="badge badge-pill badge-light main-color-border">${param.time}</span>
+          </h6>
+          <h5 class="card-title">${param.title}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">${param.subtitle}</h6>
+          <p class="card-text">${param.description}</p>
+        </div>
+      </div>`
+  }
 
   let currentPage = window.location.hash
 

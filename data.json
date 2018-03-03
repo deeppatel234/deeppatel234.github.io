@@ -2,5 +2,30 @@
   "firstName": "Deep",
   "lastName": "Patel",
   "github": "https://github.com/deeppatel234",
-  "linkedin": "https://www.linkedin.com/in/deeppatel234/"
+  "linkedin": "https://www.linkedin.com/in/deeppatel234/",
+  "mobile": "+91 - 9624184236",
+  "email": "deeppatel234@gmail.com",
+  "address": "Gandhinagar, Gujarat, India",
+  "work": [{
+    "time": "July-2017 to Present",
+    "title": "Jr. Application Engineer",
+    "subtitle": "ODOO",
+    "description": "Develop ERP System based on ODOO's open source python and javascript based framework.hands on experience on python and javascript"
+  },{
+    "time": "July-2016 to June-2017",
+    "title": "Intern",
+    "subtitle": "ODOO",
+    "description": "Develop ERP Feedback System on cloud based on ODOO's open source python and javascript based frameword."
+  }],
+  "education": [{
+    "time": "2013 to 2017",
+    "title": "Bachelor of Engineering in Computer Engineering",
+    "subtitle": "Gujarat Power Engineering and Research Institute",
+    "description": ""
+  },{
+    "time": "2011 to 2013",
+    "title": "Higher Secondary Certificate",
+    "subtitle": "Shri J.M.Chaudhary Sarvajanik Vidhyalaya",
+    "description": ""
+  }]
 }
