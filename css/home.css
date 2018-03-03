@@ -8,6 +8,7 @@
     width: 100%;
     transition: all 0.3s;
     position: relative;
+    overflow: auto;
 }
 
 .home-page {
@@ -55,15 +56,67 @@
 
 .page {
   top: 0;
-  overflow: auto;
   width: 100%;
   min-height: 100%;
   position: absolute;
-  background-color: aquamarine;
+  background-color: var(--page-bg-color);
   margin-left: -120%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .page:target {
     margin-left: 0%;
+}
+
+/* contacts-contant */
+
+.page-contant {
+    margin: 80px 40px 20px 40px;
+    position: relative;
+}
+
+.side-icon {
+    position: absolute;
+    right: 0;
+    font-size: 190px;
+    top: -100px;
+    color: #0c54601c;
+    z-index: 50;
+}
+
+.page-contant .page-title span{
+    font-size:  2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.get-in-touch-list {
+    list-style: none;
+    color: var(--main-color);
+}
+
+.google-map {
+    width: inherit;
+    height: 400px;
+}
+
+.timeline-continer {
+    border-left: 1px solid var(--main-color);
+}
+
+.timeline {
+    margin-bottom: 15px;
+    border: none;
+}
+
+.timeline::after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: var(--main-color);
+    left: -8px;
+    top: -5px;
+    border-radius: 50%;
 }
