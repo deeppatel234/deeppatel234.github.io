@@ -120,3 +120,8 @@
     top: -5px;
     border-radius: 50%;
 }
+
+.personal-info {
+    list-style: none;
+    padding-left: 10px;
+}

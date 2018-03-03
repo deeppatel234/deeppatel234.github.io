@@ -5,7 +5,23 @@ $(document).ready(function () {
     $('#sidebar').toggleClass('active');
   })
 
-  $.getJSON('data.json', function (data) {
+  function getUrlParameter (sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  };
+
+  var url = getUrlParameter('url');
+  $.getJSON(url, function (data) {
     replaceData(data);
   });
 
@@ -19,6 +35,7 @@ $(document).ready(function () {
     $('.contacts-contant span.mobile').text(data.mobile);
     $('.contacts-contant span.email').text(data.email);
     $('.contacts-contant a.email-mailto').attr(`mailto:${data.email}`);
+    $('.about-contant span.about-descrition').text(data.aboutdescription);
 
     data.work.forEach(element => {
       $('.work-timeline').append(timelineTemplate(element));
