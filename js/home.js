@@ -20,7 +20,8 @@ $(document).ready(function () {
     }
   };
 
-  var url = getUrlParameter('url');
+  var url = getUrlParameter('url') || 'data.json';
+
   $.getJSON(url, function (data) {
     replaceData(data);
   });
