@@ -4,6 +4,7 @@
     z-index: 999;
     background: var(--sidebar-bg-color); 
     transition: all 0.3s;
+    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.13);
 }
 
 .sidebar-menu {

@@ -38,12 +38,22 @@ $(document).ready(function () {
     $('.contacts-contant a.email-mailto').attr(`mailto:${data.email}`);
     $('.about-contant span.about-descrition').text(data.aboutdescription);
 
+    $('.about-contant .personal-info span.name').text(data.firstName + ' ' + data.lastName);
+    $('.about-contant .personal-info span.birthday').text(data.birthday);
+    $('.about-contant .personal-info span.nationality').text(data.nationality);
+    $('.about-contant .personal-info span.bornplace').text(data.bornplace);
+    $('.about-contant .personal-info span.language').text(data.language);
+
     data.work.forEach(element => {
       $('.work-timeline').append(timelineTemplate(element));
     });
 
     data.education.forEach(element => {
       $('.education-timeline').append(timelineTemplate(element));
+    });
+
+    data.skills.forEach(element => {
+      $('.skill-container').append(skillTemplate(element));
     });
   }
 
@@ -63,6 +73,24 @@ $(document).ready(function () {
           <p class="card-text">${param.description}</p>
         </div>
       </div>`
+  }
+
+  function skillTemplate (params) {
+    let template = `<div class="col-md-2 mb-3">
+              <span class="skill-header">${params.title}</span>
+            </div>
+            <div class="col-md-10 mb-3"><div class="row">`;
+
+    params.items.forEach(element => {
+      template += `
+                <div class="col-md-4 skill-card text-center">
+                  <img src="${element.img}" class="skill-logo">
+                  <p>${element.name}</p>
+                </div>
+              `
+    })
+
+    return template + "</div></div>"
   }
 
   let currentPage = window.location.hash

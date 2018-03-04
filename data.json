@@ -1,6 +1,10 @@
 {
   "firstName": "Deep",
   "lastName": "Patel",
+  "birthday": "01 Sep 1996",
+  "nationality": "Indian",
+  "bornplace": "Gujarat, India",
+  "language": "Gujarati, Hindi, English",
   "github": "https://github.com/deeppatel234",
   "linkedin": "https://www.linkedin.com/in/deeppatel234/",
   "mobile": "+91 - 9624184236",
@@ -28,5 +32,39 @@
     "subtitle": "Shri J.M.Chaudhary Sarvajanik Vidhyalaya",
     "description": ""
   }],
-  "aboutdescription": "Always willing to innovate the new things which can improve the existing technology.Eager to learn new technologies and methodologies.Willing to work for an organization which provides me the oppertunity to improve my skills and knowledge for my growth along with the organization objective."
+  "aboutdescription": "Always willing to innovate the new things which can improve the existing technology.Eager to learn new technologies and methodologies.Willing to work for an organization which provides me the oppertunity to improve my skills and knowledge for my growth along with the organization objective.",
+  "skills": [{
+      "title": "Web Technology",
+      "items": [
+        {
+          "name": "Javascript",
+          "img": "img/js.png"
+        },
+        {
+          "name": "React JS",
+          "img": "img/reactjs.png"
+        },
+        {
+          "name": "Node JS",
+          "img": "img/nodejs.png"
+        },
+        {
+          "name": "jQuery",
+          "img": "img/jquery.png"
+        },
+        {
+          "name": "Less",
+          "img": "img/less.png"
+        }
+      ]
+    },{
+      "title": "Database",
+      "items": [{
+        "name": "Mongodb", 
+        "img": "img/mongodb.png"
+      }, {
+        "name": "MySQL",
+        "img": "img/mysql.png"
+      }]
+  }]
 }

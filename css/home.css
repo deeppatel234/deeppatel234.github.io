@@ -125,3 +125,16 @@
     list-style: none;
     padding-left: 10px;
 }
+
+.skill-card {
+    padding: 10px;
+}
+
+.skill-logo {
+    height: 60px;
+    width: 200px;
+}
+
+.skill-header {
+    border-bottom: 1px solid;
+}
