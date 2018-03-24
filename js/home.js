@@ -55,6 +55,10 @@ $(document).ready(function () {
     data.skills.forEach(element => {
       $('.skill-container').append(skillTemplate(element));
     });
+
+    data.projects.forEach(element => {
+      $('.project-items').append(propjectItems(element));
+    });
   }
 
   $('.sidebar-menu a').click(function (ev) {
@@ -73,6 +77,27 @@ $(document).ready(function () {
           <p class="card-text">${param.description}</p>
         </div>
       </div>`
+  }
+
+  function propjectItems (params) {
+    
+    let tags = params.tags.map((t) => `<span class="badge badge-pill badge-project">${t}</span>`)
+
+    if (params.links) {
+      let git = params.links.github && `<a href="${params.links.github}" target="_blank"><i class="fab fa-github"></i> View in Github</a>`
+      let web = params.links.website && `<a href="${params.links.website}" target="_blank"><i class="fas fa-globe"></i> Website</a>`
+      var otherInfo = params.links && `<p class="other-info">
+        ${git || ''} ${web || ''}
+      </p>`
+    }
+
+
+    return `<div class="project-item">
+              <h5>${params.title}</h5>
+              <p>${tags.join('')}</p>
+              <p class="description">${params.description}</p>
+              ${otherInfo || ''}
+            </div>`
   }
 
   function skillTemplate (params) {

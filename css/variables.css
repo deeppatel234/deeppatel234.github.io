@@ -13,6 +13,12 @@
     padding: 7px;
 }
 
+.badge-project {
+    background-color: var(--main-color);
+    color: var(--white-text-color);
+    margin-right: 5px;
+}
+
 .main-color-text {
     color: var(--main-color);
 }

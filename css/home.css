@@ -138,3 +138,20 @@
 .skill-header {
     border-bottom: 1px solid;
 }
+
+.project-item p{
+    margin-bottom: 5px;
+}
+
+.project-item {
+    width: 100%;
+    margin-top: 20px;
+}
+.project-item .other-info {
+    font-size: 12px;
+}
+
+.project-item .other-info a{
+    margin-right: 10px;
+    color: var(--main-color);
+}

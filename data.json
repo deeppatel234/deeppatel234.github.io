@@ -66,5 +66,64 @@
         "name": "MySQL",
         "img": "img/mysql.png"
       }]
+  }],
+  "projects": [{
+    "title": "ERP Feedback System on Cloud",
+    "tags": ["Javascript", "Python"],
+    "description": "Annotation System for point to point communication in odoo"
+  },{
+    "title": "Result Analysis System",
+    "tags": [
+      "Javascript",
+      "NodeJS",
+      "React JS",
+      "MongoDB"
+    ],
+    "description": "Data crawler from GTU website which generates various reports based on data with web dashboard",
+    "links": {
+      "github": "https://github.com/deeppatel234/Gperi-Result-React",
+      "website": "https://gperiresult.herokuapp.com/#/"
+    }
+  },{
+    "title": "AutoLogin",
+    "tags": [
+      "Javascript",
+      "Chrome"
+    ],
+    "description": "Password management Chrome extension with 1-click login feature",
+    "links": {
+      "github": "https://github.com/deeppatel234/AutoLogin"
+    }
+  },{
+    "title": "Automated Parking Management System",
+    "tags": [
+      "C",
+      "C#",
+      "Aurdino"
+    ],
+    "description": "Aurdino hardware based parking management system with live dashboard and real-time reporting",
+    "links": {
+      "github": "https://github.com/deeppatel234/Parking-Management-System"
+    }
+  },{
+    "title": "MathsFormulas for Windows",
+    "tags": [
+      "C#",
+      "WPF"
+    ],
+    "description": "Categorized mats formulas with easy-to-use navigation and localization support in 5 languages with 15K+ downloads globally in Windows Store",
+    "links": {
+      "website": "https://www.microsoft.com/en-kw/store/p/mathsformulas/9wzdncrcwfld"
+    }
+  },{
+    "title": "Numerical Method for Windows Phone",
+    "tags": [
+      "C#",
+      "WPF"
+    ],
+    "description": "Solve various numerical methods and gives step by step solution for each method",
+    "links": {
+      "website": "https://www.microsoft.com/en-kw/store/p/numerical-method/9nblggh2w3xs"
+    }
   }]
 }
