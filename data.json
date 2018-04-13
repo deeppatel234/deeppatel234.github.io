@@ -14,7 +14,7 @@
     "time": "July-2017 to Present",
     "title": "Jr. Application Engineer",
     "subtitle": "ODOO",
-    "description": "Develop ERP System based on ODOO's open source python and javascript based framework.hands on experience on python and javascript"
+    "description": "Develop ERP System based on ODOO's open source python and javascript based framework, hands on experience on python and javascript.Worked on enterprise product for new features (lead gen, setting unification, runbot CI chrome extension) and bug fixes following SDLC. One of my teamwork was also showcased on  ODOO 11 launch video."
   },{
     "time": "July-2016 to June-2017",
     "title": "Intern",
@@ -32,7 +32,7 @@
     "subtitle": "Shri J.M.Chaudhary Sarvajanik Vidhyalaya",
     "description": ""
   }],
-  "aboutdescription": "Always willing to innovate the new things which can improve the existing technology. Eager to learn new technologies and methodologies. Willing to work for an organization which provides me the oppertunity to improve my skills and knowledge for my growth along with the organization objective.",
+  "aboutdescription": "Being front-end developer and freelancer, I'm seeking full time opportunity in the organization. I'm confident enough to prove myself worth to the company by applying my knowledge and skills for continues improvement. I can also work in agile environment and be a team player.",
   "skills": [{
       "title": "Web Technology",
       "items": [
@@ -68,22 +68,44 @@
       }]
   }],
   "projects": [{
-    "title": "ERP Feedback System on Cloud",
-    "tags": ["Javascript", "Python"],
-    "description": "Annotation System for point to point communication in odoo"
+    "title": "MongoORM",
+    "tags": [
+      "Javascript",
+      "NodeJS",
+      "JEST",
+      "MongoDB"
+    ],
+    "description": "Lightweight ORM using mongodb native nodejs driver.",
+    "links": {
+      "github": "https://github.com/deeppatel234/mongoorm"
+    }
   },{
     "title": "Result Analysis System",
     "tags": [
       "Javascript",
       "NodeJS",
       "React JS",
-      "MongoDB"
+      "MongoDB",
+      "LESS"
     ],
     "description": "Data crawler from GTU website which generates various reports based on data with web dashboard",
     "links": {
       "github": "https://github.com/deeppatel234/Gperi-Result-React",
       "website": "https://gperiresult.herokuapp.com/#/"
     }
+  },{
+    "title": "Lead Generation Tool",
+    "tags": [
+      "Javascript",
+      "Python",
+      "PostgreSQL",
+      "LESS"
+    ],
+    "description": "Create Leads/Opportunities from your website's traffic"
+  },{
+    "title": "ERP Feedback System on Cloud",
+    "tags": ["Javascript", "Python"],
+    "description": "Annotation System for point to point communication in odoo"
   },{
     "title": "AutoLogin",
     "tags": [
