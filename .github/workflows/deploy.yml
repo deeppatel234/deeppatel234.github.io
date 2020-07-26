@@ -21,6 +21,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@development
 
+    # 
+    - name: Install dependancy
+      run: yarn install
+
     # install dependancy
     - name: Install dependancy
       run: yarn install
