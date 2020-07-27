@@ -189,13 +189,95 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"my-photo.png":[function(require,module,exports) {
+module.exports = "/my-photo.2dfbedd3.png";
+},{}],"home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _myPhoto = _interopRequireDefault(require("./my-photo.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var home = "\n    <div id=\"home-page\">\n        <div class=\"home-name\">\n            <div>\n                Hi,\n            </div>\n            <div class=\"bold\">\n                I\u2019m <span class=\"text-primary\">Deep Patel</span>,\n            </div>\n            <div>\n                Javascript Developer.\n            </div>\n            <div class=\"sub-footer\">\n                Front End Developer | NodeJS Developer\n            </div>\n            <a\n                class=\"contect-me-footer\"\n                href=\"mailto:deeppatel234@gmail.com\"\n                target=\"_blank\"\n            >\n                Contact Me\n            </a>\n        </div>\n        <img class=\"my-photo\" src=\"".concat(_myPhoto.default, "\" />\n    </div>\n");
+var _default = home;
+exports.default = _default;
+},{"./my-photo.png":"my-photo.png"}],"work.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var work = "\n    <div id=\"work-page\">\n        \n    </div>\n";
+var _default = work;
+exports.default = _default;
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./index.scss");
 
-console.log('hieeeeeeeeee');
-},{"./index.scss":"index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _home = _interopRequireDefault(require("./home"));
+
+var _work = _interopRequireDefault(require("./work"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rootContent = document.getElementById("root-content");
+var menubarElement = document.getElementById("menubar");
+var navBarElement = document.getElementById("nav-bar");
+var overlayElement = document.getElementById("overlay");
+var routes = ["home", "work"];
+
+var updateNav = function updateNav(to) {
+  var page = to.replace("#", "");
+  var navElement = document.getElementById("nav-".concat(page));
+
+  if (!navElement) {
+    navElement = document.getElementById("nav-home");
+  }
+
+  routes.forEach(function (route) {
+    return document.getElementById("nav-".concat(route)).classList.remove("active");
+  });
+
+  if (navElement) {
+    navElement.classList.add("active");
+  }
+};
+
+var resetNavBar = function resetNavBar() {
+  navBarElement.classList.remove("show");
+  overlayElement.classList.add("hide");
+};
+
+var navigate = function navigate(to) {
+  var dom = "";
+
+  if (to === "#work") {
+    dom = _work.default;
+  } else {
+    dom = _home.default;
+  }
+
+  rootContent.innerHTML = dom;
+  updateNav(to);
+  resetNavBar();
+};
+
+window.addEventListener("hashchange", function () {
+  navigate(location.hash);
+}, false);
+menubarElement.addEventListener("click", function () {
+  navBarElement.classList.add("show");
+  overlayElement.classList.remove("hide");
+});
+navigate(location.hash);
+},{"./index.scss":"index.scss","./home":"home.js","./work":"work.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -223,7 +305,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40549" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37515" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

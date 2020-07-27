@@ -20,9 +20,6 @@ body {
   display: flex;
   overflow: hidden; }
 
-.bold {
-  font-weight: bold; }
-
 *::-moz-selection {
   color: #fff;
   background: var(--primary-color); }
@@ -36,8 +33,14 @@ body {
 ::before {
   box-sizing: border-box; }
 
-.my-photo {
-  height: 100%; }
+.bold {
+  font-weight: bold; }
+
+.mobile {
+  display: none; }
+
+.text-primary {
+  color: var(--primary-color); }
 
 #sidebar {
   display: flex;
@@ -70,23 +73,59 @@ body {
       color: #3b5998; }
     #sidebar .social-icons .instagram:hover {
       color: #e1306c; }
+    #sidebar .social-icons .github:hover {
+      color: #2ea44f; }
+  #sidebar #nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #sidebar #nav-bar a {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none; }
+      #sidebar #nav-bar a:hover, #sidebar #nav-bar a.active {
+        color: var(--primary-color); }
 
-#main-page {
+#root-content {
   flex: 1;
   min-width: 0;
-  min-height: 0;
+  min-height: 0; }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.8); }
+  #overlay.hide {
+    display: none; }
+
+#home-page {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  #main-page .sub-footer {
+  justify-content: space-between;
+  height: 100%;
+  width: 100%; }
+  #home-page .my-photo {
+    height: 100%; }
+  #home-page .home-name {
+    font-size: 2.5rem;
+    padding: 2rem 3rem; }
+  #home-page .sub-footer {
     color: rgba(255, 255, 255, 0.2);
     font-size: 1rem;
     margin: 1rem 0 3rem 0;
     letter-spacing: 3px; }
-  #main-page .my-photo {
+  #home-page .my-photo {
     height: 100%;
     opacity: 0.4; }
-  #main-page .contect-me-footer {
+  #home-page .contect-me-footer {
     background-color: var(--primary-color);
     color: #fff;
     font-size: 0.7rem;
@@ -95,28 +134,54 @@ body {
     padding: 0.7rem 1.3rem;
     text-transform: uppercase; }
 
-.home-name {
-  font-size: 2.5rem;
-  padding: 2rem 3rem; }
-
-.text-primary {
-  color: var(--primary-color); }
-
 @media only screen and (max-width: 768px) {
   :root {
     font-size: 14px; }
-  #sidebar .social-icons {
-    position: fixed;
-    bottom: 0;
-    flex-direction: row;
-    left: 0;
-    width: 100%;
-    font-size: 1.5rem;
-    justify-content: center; }
-    #sidebar .social-icons a {
-      margin: 1rem; }
-  #sidebar .sidebar-name {
+  #root {
+    flex-direction: column; }
+  .mobile {
+    display: block; }
+  .desktop {
     display: none; }
+  #sidebar {
+    flex-direction: row; }
+    #sidebar .social-icons {
+      position: fixed;
+      bottom: 0;
+      flex-direction: row;
+      left: 0;
+      width: 100%;
+      font-size: 1.5rem;
+      justify-content: center; }
+      #sidebar .social-icons a {
+        margin: 1rem; }
+    #sidebar .sidebar-name {
+      padding: 1rem 2rem; }
+    #sidebar .menu-bar-button {
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 1rem 2rem; }
+      #sidebar .menu-bar-button:hover {
+        color: var(--primary-color); }
+    #sidebar #nav-bar {
+      z-index: 10;
+      position: fixed;
+      top: -200px;
+      background: var(--dark-background);
+      width: 100%;
+      flex-direction: row;
+      justify-content: center; }
+      #sidebar #nav-bar a {
+        font-size: 1rem;
+        flex-direction: column;
+        padding: 2rem; }
+        #sidebar #nav-bar a svg {
+          font-size: 2.5rem;
+          margin-bottom: 0.5rem; }
+      #sidebar #nav-bar.show {
+        top: 0; } }
+
+@media only screen and (max-width: 1024px) {
   #main-page .my-photo {
     display: none; } }
 
