@@ -2,7 +2,7 @@ import myPhoto from "./my-photo.png";
 
 const home = `
     <div id="home-page">
-        <div class="home-name">
+        <div class="home-name animate__animated animate__fadeIn">
             <div>
                 Hi,
             </div>
@@ -23,7 +23,9 @@ const home = `
                 Contact Me
             </a>
         </div>
-        <img class="my-photo" src="${myPhoto}" />
+        <div class="animate__animated animate__fadeIn">
+            <img class="my-photo" src="${myPhoto}" />
+        </div>
     </div>
 `;
 

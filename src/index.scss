@@ -167,10 +167,6 @@ body {
     height: 100%;
     width: 100%;
 
-    .my-photo {
-        height: 100%;
-    }
-
     .home-name {
         font-size: 2.5rem;
         padding: 2rem 3rem;
@@ -274,7 +270,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-    #main-page {
+    #home-page {
         .my-photo {
             display: none;
         }
