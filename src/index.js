@@ -54,4 +54,8 @@ menubarElement.addEventListener("click", () => {
     overlayElement.classList.remove("hide");
 });
 
+overlayElement.addEventListener("click", () => {
+    resetNavBar();
+});
+
 navigate(location.hash);

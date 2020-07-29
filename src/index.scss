@@ -55,6 +55,15 @@ body {
     color: var(--primary-color);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.color-animation {
+    transition: all 0.3s ease;
+}
+
 // page css
 
 #sidebar {
@@ -86,6 +95,10 @@ body {
         a {
             color: rgba(255,255,255,.6);
             margin: 0.7rem 0;
+        }
+
+        svg {
+            transition: all 0.3s ease;
         }
 
         .linkedin {
@@ -132,6 +145,7 @@ body {
             cursor: pointer;
             font-weight: bold;
             text-decoration: none;
+            transition: all 0.3s ease;
 
             &:hover, &.active {
                 color: var(--primary-color);
@@ -154,6 +168,7 @@ body {
     width: 100%;
     z-index: 5;
     background-color: rgba(0,0,0,0.8);
+    --animate-duration: 0.5s;
 
     &.hide {
         display: none;
@@ -250,6 +265,7 @@ body {
             width: 100%;
             flex-direction: row;
             justify-content: center;
+            transition: top 0.3s ease;
 
             a {
                 font-size: 1rem;
