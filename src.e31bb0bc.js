@@ -203,7 +203,7 @@ var _myPhoto = _interopRequireDefault(require("./my-photo.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var home = "\n    <div id=\"home-page\">\n        <div class=\"home-name\">\n            <div>\n                Hi,\n            </div>\n            <div class=\"bold\">\n                I\u2019m <span class=\"text-primary\">Deep Patel</span>,\n            </div>\n            <div>\n                Javascript Developer.\n            </div>\n            <div class=\"sub-footer\">\n                Front End Developer | NodeJS Developer\n            </div>\n            <a\n                class=\"contect-me-footer\"\n                href=\"mailto:deeppatel234@gmail.com\"\n                target=\"_blank\"\n            >\n                Contact Me\n            </a>\n        </div>\n        <img class=\"my-photo\" src=\"".concat(_myPhoto.default, "\" />\n    </div>\n");
+var home = "\n    <div id=\"home-page\">\n        <div class=\"home-name animate__animated animate__fadeIn\">\n            <div>\n                Hi,\n            </div>\n            <div class=\"bold\">\n                I\u2019m <span class=\"text-primary\">Deep Patel</span>,\n            </div>\n            <div>\n                Javascript Developer.\n            </div>\n            <div class=\"sub-footer\">\n                Front End Developer | NodeJS Developer\n            </div>\n            <a\n                class=\"contect-me-footer\"\n                href=\"mailto:deeppatel234@gmail.com\"\n                target=\"_blank\"\n            >\n                Contact Me\n            </a>\n        </div>\n        <div class=\"animate__animated animate__fadeIn\">\n            <img class=\"my-photo\" src=\"".concat(_myPhoto.default, "\" />\n        </div>\n    </div>\n");
 var _default = home;
 exports.default = _default;
 },{"./my-photo.png":"my-photo.png"}],"work.js":[function(require,module,exports) {
@@ -305,7 +305,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37515" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

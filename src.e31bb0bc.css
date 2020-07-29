@@ -112,8 +112,6 @@ body {
   justify-content: space-between;
   height: 100%;
   width: 100%; }
-  #home-page .my-photo {
-    height: 100%; }
   #home-page .home-name {
     font-size: 2.5rem;
     padding: 2rem 3rem; }
@@ -182,7 +180,7 @@ body {
         top: 0; } }
 
 @media only screen and (max-width: 1024px) {
-  #main-page .my-photo {
+  #home-page .my-photo {
     display: none; } }
 
 
