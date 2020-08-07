@@ -277,7 +277,8 @@ a {
         border: none; }
         #work-page .project-card .secound-col a {
           border: none;
-          width: auto; } }
+          width: auto;
+          padding: 0.6rem; } }
 
 @media only screen and (max-width: 1024px) {
   #home-page .my-photo {
