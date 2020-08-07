@@ -233,10 +233,15 @@ a {
     overflow: auto;
     height: 100%;
     width: 100%;
+    padding: 4rem;
 
     .project-card {
         display: flex;
-        padding: 3rem;
+        padding-bottom: 4rem;
+
+        h1.title {
+            margin: 0;
+        }
 
         .badges {
             img {
@@ -252,12 +257,15 @@ a {
             text-align: justify;
         }
 
-        .screenshot {
-            width: 100%;
-        }
-
         .secound-col {
             padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid;
+            margin: 2rem 0 2rem 2rem;
+            color: rgba(255,255,255, 0.1);
 
             a {
                 display: inline-flex;
@@ -380,15 +388,20 @@ a {
     }
 
     #work-page {
+        padding: 2rem 2rem 0 2rem;
+
         .project-card {
             flex-direction: column;
-            padding: 1rem 2rem;
+            padding-bottom: 2rem;
 
             .secound-col {
                 display: flex;
+                flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 1rem 0;
+                margin: 0;
+                border: none;
 
                 a {
                     border: none;

@@ -167,6 +167,48 @@ const projects = [
             },
         ],
     },
+    {
+        name: "Webpack Report",
+        description: `
+            Webpack build analysis tool. it gives a detailed report for assets, modules and chunks so you can easily optimize your webpack build.
+        `,
+        github: "https://github.com/deeppatel234/react-context-devtool",
+        badges: [
+          {
+            link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/npm/dt/webpack-report.svg?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/npm/v/react-context-devtool.svg?style=flat-square",
+          },
+        ],
+        screenshots: [
+            {
+                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/dashboard.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/assets.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/modules.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/chunks.png?raw=true",
+            },
+        ],
+        links: [
+            {
+                type: ICON_TPYE.GITHUB,
+                url: "https://github.com/deeppatel234/webpack-report",
+            },
+            {
+                type: ICON_TPYE.NPM,
+                url: "https://www.npmjs.com/package/webpack-report",
+            },
+        ],
+    },
 ];
 
 const work = `
@@ -176,7 +218,7 @@ const work = `
                 return `
                     <div class="project-card">
                         <div class="first-col">
-                            <h1>
+                            <h1 class="title">
                                 ${name}
                             </h1>
                             <p class="badges">
@@ -214,7 +256,7 @@ const work = `
                                 </a>
                               `;
                           }).join("")}
-                        <div/>
+                        </div>
                     </div>
                 `;
             })
