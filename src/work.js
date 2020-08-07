@@ -10,6 +10,7 @@ const ICON_TPYE = {
     FIREFOX: "FIREFOX",
     EDGE: "EDGE",
     NPM: "NPM",
+    WEBSITE: "WEBSITE",
 };
 
 const iconsName = {
@@ -18,6 +19,7 @@ const iconsName = {
   [ICON_TPYE.FIREFOX] : "Firefox",
   [ICON_TPYE.EDGE] : "Edge",
   [ICON_TPYE.NPM] : "NPM",
+  [ICON_TPYE.WEBSITE] : "Website",
 };
 
 const icons = {
@@ -99,6 +101,21 @@ const icons = {
         />
       </svg>
     `,
+    [ICON_TPYE.WEBSITE]: `
+        <svg
+            focusable="false"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="1em"
+            width="1em"
+        >
+            <path
+                fill="currentColor"
+                d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM32 80c0-8.8 7.2-16 16-16h48v64H32V80zm448 352c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V160h448v272zm0-304H128V64h336c8.8 0 16 7.2 16 16v48z"
+            />
+        </svg>
+    `,
 };
 
 const projects = [
@@ -108,7 +125,6 @@ const projects = [
             Devtool for debug ReactJS Context and useReducer API. Devtool have raw, tree and diff views of your JSON data.
             It allow you can dispatch actions from devtool in useReducer hook.
         `,
-        github: "https://github.com/deeppatel234/react-context-devtool",
         badges: [
           {
             link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
@@ -172,7 +188,6 @@ const projects = [
         description: `
             Webpack build analysis tool. it gives a detailed report for assets, modules and chunks so you can easily optimize your webpack build.
         `,
-        github: "https://github.com/deeppatel234/react-context-devtool",
         badges: [
           {
             link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
@@ -206,6 +221,86 @@ const projects = [
             {
                 type: ICON_TPYE.NPM,
                 url: "https://www.npmjs.com/package/webpack-report",
+            },
+        ],
+    },
+    {
+        name: "MD Editor React",
+        description: `
+            Markdown Editor for ReactJS. create a markdown with live preview and customized menu bar.
+        `,
+        badges: [
+          {
+            link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/npm/dt/md-editor-react.svg?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/npm/v/md-editor-react.svg?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/bundlephobia/min/md-editor-react?style=flat-square",
+          },
+          {
+            link: "https://img.shields.io/bundlephobia/minzip/md-editor-react?style=flat-square",
+          },
+        ],
+        screenshots: [
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-1.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-2.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-3.png?raw=true",
+            },
+        ],
+        links: [
+            {
+                type: ICON_TPYE.GITHUB,
+                url: "https://github.com/deeppatel234/md-editor-react",
+            },
+            {
+                type: ICON_TPYE.NPM,
+                url: "https://www.npmjs.com/package/md-editor-react",
+            },
+        ],
+    },
+    {
+        name: "EditMyMd",
+        description: `
+            Easily manage your GitHub and GitLab project documentation. With EditMyMD you can manage your all markdown files.
+        `,
+        screenshots: [
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-1.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-2.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-3.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-4.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-5.png?raw=true",
+            },
+            {
+                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-6.png?raw=true",
+            },
+        ],
+        links: [
+            {
+                type: ICON_TPYE.GITHUB,
+                url: "https://github.com/deeppatel234/editmymd",
+            },
+            {
+                type: ICON_TPYE.WEBSITE,
+                url: "https://www.editmymd.me/",
             },
         ],
     },
