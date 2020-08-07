@@ -80,6 +80,56 @@ a {
 
 // page css
 
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1rem;
+
+    a {
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0.7rem 0;
+    }
+
+    svg {
+        transition: all 0.3s ease;
+    }
+
+    &.home {
+        display: none;
+    }
+
+    .linkedin {
+        &:hover {
+            color: #0077b5;
+        }
+    }
+
+    .twitter {
+        &:hover {
+            color: #1da1f2;
+        }
+    }
+
+    .facebook {
+        &:hover {
+            color: #3b5998;
+        }
+    }
+
+    .instagram {
+        &:hover {
+            color: #e1306c;
+        }
+    }
+
+    .github {
+        &:hover {
+            color: #2ea44f;
+        }
+    }
+}
+
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -97,52 +147,6 @@ a {
 
         &:hover {
             color: var(--primary-color);
-        }
-    }
-
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        font-size: 1rem;
-
-        a {
-            color: rgba(255, 255, 255, 0.6);
-            margin: 0.7rem 0;
-        }
-
-        svg {
-            transition: all 0.3s ease;
-        }
-
-        .linkedin {
-            &:hover {
-                color: #0077b5;
-            }
-        }
-
-        .twitter {
-            &:hover {
-                color: #1da1f2;
-            }
-        }
-
-        .facebook {
-            &:hover {
-                color: #3b5998;
-            }
-        }
-
-        .instagram {
-            &:hover {
-                color: #e1306c;
-            }
-        }
-
-        .github {
-            &:hover {
-                color: #2ea44f;
-            }
         }
     }
 
@@ -310,21 +314,29 @@ a {
         display: none;
     }
 
+    .social-icons {
+        position: fixed;
+        bottom: 30px;
+        flex-direction: row;
+        left: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        justify-content: center;
+
+        a {
+            margin: 1rem;
+        }
+
+        &.home {
+            display: flex;
+        }
+    }
+
     #sidebar {
         flex-direction: row;
 
         .social-icons {
-            position: fixed;
-            bottom: 0;
-            flex-direction: row;
-            left: 0;
-            width: 100%;
-            font-size: 1.5rem;
-            justify-content: center;
-
-            a {
-                margin: 1rem;
-            }
+            display: none;
         }
 
         .sidebar-name {
