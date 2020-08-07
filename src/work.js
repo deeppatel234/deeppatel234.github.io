@@ -103,7 +103,7 @@ const icons = {
 
 const projects = [
     {
-        name: "React Cotext Devtool",
+        name: "React Context Devtool",
         description: `
             Devtool for debug ReactJS Context and useReducer API. Devtool have raw, tree and diff views of your JSON data.
             It allow you can dispatch actions from devtool in useReducer hook.
