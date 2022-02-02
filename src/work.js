@@ -4,26 +4,28 @@
 // expensy
 // editmymd
 
-const ICON_TPYE = {
+const ICON_TYPE = {
   GITHUB: "GITHUB",
   CHROME: "CHROME",
   FIREFOX: "FIREFOX",
   EDGE: "EDGE",
   NPM: "NPM",
   WEBSITE: "WEBSITE",
+  PLAY_STORE: "PLAY_STORE",
 };
 
 const iconsName = {
-  [ICON_TPYE.GITHUB]: "Github",
-  [ICON_TPYE.CHROME]: "Chrome",
-  [ICON_TPYE.FIREFOX]: "Firefox",
-  [ICON_TPYE.EDGE]: "Edge",
-  [ICON_TPYE.NPM]: "NPM",
-  [ICON_TPYE.WEBSITE]: "Website",
+  [ICON_TYPE.GITHUB]: "Github",
+  [ICON_TYPE.CHROME]: "Chrome",
+  [ICON_TYPE.FIREFOX]: "Firefox",
+  [ICON_TYPE.EDGE]: "Edge",
+  [ICON_TYPE.NPM]: "NPM",
+  [ICON_TYPE.WEBSITE]: "Website",
+  [ICON_TYPE.PLAY_STORE]: "Play Store",
 };
 
 const icons = {
-  [ICON_TPYE.GITHUB]: `
+  [ICON_TYPE.GITHUB]: `
       <svg
         aria-hidden="true"
         role="img"
@@ -39,7 +41,7 @@ const icons = {
         />
     </svg>
   `,
-  [ICON_TPYE.CHROME]: `
+  [ICON_TYPE.CHROME]: `
       <svg
         class="chrome"
         role="img"
@@ -55,7 +57,7 @@ const icons = {
           />
       </svg>
     `,
-  [ICON_TPYE.FIREFOX]: `
+  [ICON_TYPE.FIREFOX]: `
       <svg
         class="firefox-browser"
         role="img"
@@ -71,7 +73,7 @@ const icons = {
         />
       </svg>
     `,
-  [ICON_TPYE.EDGE]: `
+  [ICON_TYPE.EDGE]: `
       <svg
         class="edge"
         role="img"
@@ -86,7 +88,7 @@ const icons = {
         />
       </svg>
     `,
-  [ICON_TPYE.NPM]: `
+  [ICON_TYPE.NPM]: `
       <svg
         class="npm"
         role="img"
@@ -101,7 +103,7 @@ const icons = {
         />
       </svg>
     `,
-  [ICON_TPYE.WEBSITE]: `
+  [ICON_TYPE.WEBSITE]: `
         <svg
             focusable="false"
             role="img"
@@ -116,9 +118,50 @@ const icons = {
             />
         </svg>
     `,
+  [ICON_TYPE.PLAY_STORE]: `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path fill="none" d="M0 0h24v24H0z"/>
+      <path fill="currentColor" d="M4 1.734a1 1 0 0 1 .501.135l16.004 9.266a1 1 0 0 1 0 1.73L4.501 22.131A1 1 0 0 1 3 21.266V2.734a1 1 0 0 1 1-1zm8.292 11.68l-4.498 4.498 5.699-3.299-1.2-1.2zM5 6.118v11.76l5.88-5.88-5.88-5.88zm10.284 4.302L13.706 12l1.578 1.577L18.008 12l-2.725-1.579zm-7.49-4.336l4.5 4.5 1.199-1.2-5.699-3.3z"/>
+    </svg>
+  `,
 };
 
 const projects = [
+  {
+    name: "Fire Dashboard",
+    description: `
+      New Tab Dashboard and Bookmark Manager. Fire dashboard is your all-in-one productivity tool with multiple workspace support.
+    `,
+    badges: [
+      {
+        link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/chrome-web-store/users/ljpgbnpckoolgelpcbpfcafklbpkodeg?label=chrome%20downloads&style=flat-square",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-1.jpeg",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-2.jpeg",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-3.jpeg",
+      },
+    ],
+    links: [
+      // {
+      //   type: ICON_TYPE.GITHUB,
+      //   url: "https://github.com/deeppatel234/fire-dashboard",
+      // },
+      {
+        type: ICON_TYPE.CHROME,
+        url: "https://chrome.google.com/webstore/detail/fire-dashboard/ljpgbnpckoolgelpcbpfcafklbpkodeg",
+      },
+    ],
+  },
   {
     name: "React Context Devtool",
     description: `
@@ -155,23 +198,23 @@ const projects = [
     ],
     links: [
       {
-        type: ICON_TPYE.GITHUB,
+        type: ICON_TYPE.GITHUB,
         url: "https://github.com/deeppatel234/react-context-devtool",
       },
       {
-        type: ICON_TPYE.CHROME,
+        type: ICON_TYPE.CHROME,
         url: "https://chrome.google.com/webstore/detail/react-context-devtool/oddhnidmicpefilikhgeagedibnefkcf",
       },
       {
-        type: ICON_TPYE.FIREFOX,
+        type: ICON_TYPE.FIREFOX,
         url: "https://addons.mozilla.org/en-US/firefox/addon/react-context-devtool/",
       },
       {
-        type: ICON_TPYE.EDGE,
+        type: ICON_TYPE.EDGE,
         url: "https://microsoftedge.microsoft.com/addons/detail/react-context-devtool/bnclaomncapgohhafjepfklgbjdjlfcd",
       },
       {
-        type: ICON_TPYE.NPM,
+        type: ICON_TYPE.NPM,
         url: "https://www.npmjs.com/package/react-context-devtool",
       },
     ],
@@ -208,11 +251,11 @@ const projects = [
     ],
     links: [
       {
-        type: ICON_TPYE.GITHUB,
+        type: ICON_TYPE.GITHUB,
         url: "https://github.com/deeppatel234/webpack-report",
       },
       {
-        type: ICON_TPYE.NPM,
+        type: ICON_TYPE.NPM,
         url: "https://www.npmjs.com/package/webpack-report",
       },
     ],
@@ -244,11 +287,11 @@ const projects = [
     ],
     links: [
       {
-        type: ICON_TPYE.GITHUB,
+        type: ICON_TYPE.GITHUB,
         url: "https://github.com/deeppatel234/editmymd",
       },
       {
-        type: ICON_TPYE.WEBSITE,
+        type: ICON_TYPE.WEBSITE,
         url: "https://editmymd.herokuapp.com/",
       },
     ],
@@ -271,11 +314,11 @@ const projects = [
     ],
     links: [
       {
-        type: ICON_TPYE.GITHUB,
+        type: ICON_TYPE.GITHUB,
         url: "https://github.com/deeppatel234/tools",
       },
       {
-        type: ICON_TPYE.WEBSITE,
+        type: ICON_TYPE.WEBSITE,
         url: "https://deeppatel234.github.io/tools",
       },
     ],
@@ -315,12 +358,48 @@ const projects = [
     ],
     links: [
       {
-        type: ICON_TPYE.GITHUB,
+        type: ICON_TYPE.GITHUB,
         url: "https://github.com/deeppatel234/md-editor-react",
       },
       {
-        type: ICON_TPYE.NPM,
+        type: ICON_TYPE.NPM,
         url: "https://www.npmjs.com/package/md-editor-react",
+      },
+    ],
+  },
+  {
+    name: "Expensy",
+    description: `
+      Personal Expense Tracking app made with react native.
+    `,
+    screenshots: [
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-1.webp",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-2.webp",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-3.webp",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-4.webp",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-5.webp",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/expensy-app/master/assets/screenshots/Expensy-6.webp",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TYPE.GITHUB,
+        url: "https://github.com/deeppatel234/expensy-app",
+      },
+      {
+        type: ICON_TYPE.PLAY_STORE,
+        url: "https://play.google.com/store/apps/details?id=com.devivetech.expensy&hl=en_IN&gl=US",
       },
     ],
   },

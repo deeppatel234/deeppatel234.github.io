@@ -279,6 +279,7 @@ a {
                 border-radius: 3px;
                 color: rgba(255, 255, 255, 0.8);
                 width: 100%;
+                text-align: center;
 
                 svg {
                     margin-bottom: 0.5rem;
@@ -300,6 +301,7 @@ a {
 
         img {
             width: 80%;
+            max-height: 500px;
             margin-right: 2rem;
         }
     }
