@@ -5,25 +5,25 @@
 // editmymd
 
 const ICON_TPYE = {
-    GITHUB: "GITHUB",
-    CHROME: "CHROME",
-    FIREFOX: "FIREFOX",
-    EDGE: "EDGE",
-    NPM: "NPM",
-    WEBSITE: "WEBSITE",
+  GITHUB: "GITHUB",
+  CHROME: "CHROME",
+  FIREFOX: "FIREFOX",
+  EDGE: "EDGE",
+  NPM: "NPM",
+  WEBSITE: "WEBSITE",
 };
 
 const iconsName = {
-  [ICON_TPYE.GITHUB] : "Github",
-  [ICON_TPYE.CHROME] : "Chrome",
-  [ICON_TPYE.FIREFOX] : "Firefox",
-  [ICON_TPYE.EDGE] : "Edge",
-  [ICON_TPYE.NPM] : "NPM",
-  [ICON_TPYE.WEBSITE] : "Website",
+  [ICON_TPYE.GITHUB]: "Github",
+  [ICON_TPYE.CHROME]: "Chrome",
+  [ICON_TPYE.FIREFOX]: "Firefox",
+  [ICON_TPYE.EDGE]: "Edge",
+  [ICON_TPYE.NPM]: "NPM",
+  [ICON_TPYE.WEBSITE]: "Website",
 };
 
 const icons = {
-    [ICON_TPYE.GITHUB]: `
+  [ICON_TPYE.GITHUB]: `
       <svg
         aria-hidden="true"
         role="img"
@@ -39,7 +39,7 @@ const icons = {
         />
     </svg>
   `,
-    [ICON_TPYE.CHROME]: `
+  [ICON_TPYE.CHROME]: `
       <svg
         class="chrome"
         role="img"
@@ -55,7 +55,7 @@ const icons = {
           />
       </svg>
     `,
-    [ICON_TPYE.FIREFOX]: `
+  [ICON_TPYE.FIREFOX]: `
       <svg
         class="firefox-browser"
         role="img"
@@ -71,7 +71,7 @@ const icons = {
         />
       </svg>
     `,
-    [ICON_TPYE.EDGE]: `
+  [ICON_TPYE.EDGE]: `
       <svg
         class="edge"
         role="img"
@@ -86,7 +86,7 @@ const icons = {
         />
       </svg>
     `,
-    [ICON_TPYE.NPM]: `
+  [ICON_TPYE.NPM]: `
       <svg
         class="npm"
         role="img"
@@ -101,7 +101,7 @@ const icons = {
         />
       </svg>
     `,
-    [ICON_TPYE.WEBSITE]: `
+  [ICON_TPYE.WEBSITE]: `
         <svg
             focusable="false"
             role="img"
@@ -119,198 +119,218 @@ const icons = {
 };
 
 const projects = [
-    {
-        name: "React Context Devtool",
-        description: `
+  {
+    name: "React Context Devtool",
+    description: `
             Devtool for debug ReactJS Context and useReducer API. Devtool have raw, tree and diff views of your JSON data.
             It allow you can dispatch actions from devtool in useReducer hook.
         `,
-        badges: [
-          {
-            link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/dt/react-context-devtool.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/v/react-context-devtool.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/chrome-web-store/users/oddhnidmicpefilikhgeagedibnefkcf?label=chrome%20downloads&style=flat-square",
-          }
-        ],
-        screenshots: [
-            {
-                link:
-                    "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/context-tree-view.png",
-            },
-            {
-                link:
-                    "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/context-raw-view.png",
-            },
-            {
-                link:
-                    "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/reducer-action-view.png",
-            },
-            {
-                link:
-                    "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/reducer-diff-view.png",
-            },
-        ],
-        links: [
-            {
-                type: ICON_TPYE.GITHUB,
-                url: "https://github.com/deeppatel234/react-context-devtool",
-            },
-            {
-                type: ICON_TPYE.CHROME,
-                url:
-                    "https://chrome.google.com/webstore/detail/react-context-devtool/oddhnidmicpefilikhgeagedibnefkcf",
-            },
-            {
-                type: ICON_TPYE.FIREFOX,
-                url:
-                    "https://addons.mozilla.org/en-US/firefox/addon/react-context-devtool/",
-            },
-            {
-                type: ICON_TPYE.EDGE,
-                url:
-                    "https://microsoftedge.microsoft.com/addons/detail/react-context-devtool/bnclaomncapgohhafjepfklgbjdjlfcd",
-            },
-            {
-                type: ICON_TPYE.NPM,
-                url: "https://www.npmjs.com/package/react-context-devtool",
-            },
-        ],
-    },
-    {
-        name: "Webpack Report",
-        description: `
+    badges: [
+      {
+        link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/dt/react-context-devtool.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/v/react-context-devtool.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/chrome-web-store/users/oddhnidmicpefilikhgeagedibnefkcf?label=chrome%20downloads&style=flat-square",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/context-tree-view.png",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/context-raw-view.png",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/reducer-action-view.png",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/react-context-devtool/master/store-assets/screenshots/reducer-diff-view.png",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TPYE.GITHUB,
+        url: "https://github.com/deeppatel234/react-context-devtool",
+      },
+      {
+        type: ICON_TPYE.CHROME,
+        url: "https://chrome.google.com/webstore/detail/react-context-devtool/oddhnidmicpefilikhgeagedibnefkcf",
+      },
+      {
+        type: ICON_TPYE.FIREFOX,
+        url: "https://addons.mozilla.org/en-US/firefox/addon/react-context-devtool/",
+      },
+      {
+        type: ICON_TPYE.EDGE,
+        url: "https://microsoftedge.microsoft.com/addons/detail/react-context-devtool/bnclaomncapgohhafjepfklgbjdjlfcd",
+      },
+      {
+        type: ICON_TPYE.NPM,
+        url: "https://www.npmjs.com/package/react-context-devtool",
+      },
+    ],
+  },
+  {
+    name: "Webpack Report",
+    description: `
             Webpack build analysis tool. it gives a detailed report for assets, modules and chunks so you can easily optimize your webpack build.
         `,
-        badges: [
-          {
-            link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/dt/webpack-report.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/v/react-context-devtool.svg?style=flat-square",
-          },
-        ],
-        screenshots: [
-            {
-                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/dashboard.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/assets.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/modules.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/chunks.png?raw=true",
-            },
-        ],
-        links: [
-            {
-                type: ICON_TPYE.GITHUB,
-                url: "https://github.com/deeppatel234/webpack-report",
-            },
-            {
-                type: ICON_TPYE.NPM,
-                url: "https://www.npmjs.com/package/webpack-report",
-            },
-        ],
-    },
-    {
-        name: "MD Editor React",
-        description: `
+    badges: [
+      {
+        link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/dt/webpack-report.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/v/react-context-devtool.svg?style=flat-square",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/dashboard.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/assets.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/modules.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/webpack-report/blob/master/assets/screenshots/chunks.png?raw=true",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TPYE.GITHUB,
+        url: "https://github.com/deeppatel234/webpack-report",
+      },
+      {
+        type: ICON_TPYE.NPM,
+        url: "https://www.npmjs.com/package/webpack-report",
+      },
+    ],
+  },
+  {
+    name: "EditMyMd",
+    description: `
+          Easily manage your GitHub and GitLab project documentation. With EditMyMD you can manage your all markdown files.
+      `,
+    screenshots: [
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-1.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-2.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-3.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-4.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-5.png?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/editmymd/blob/master/assets/screenshots/EditMyMd-6.png?raw=true",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TPYE.GITHUB,
+        url: "https://github.com/deeppatel234/editmymd",
+      },
+      {
+        type: ICON_TPYE.WEBSITE,
+        url: "https://editmymd.herokuapp.com/",
+      },
+    ],
+  },
+  {
+    name: "Tools",
+    description: `
+        Devtools collections for developers to do their daily tasks.
+      `,
+    screenshots: [
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/tools/master/assests/screenshots/Tools-1.jpeg",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/tools/master/assests/screenshots/Tools-2.jpeg",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/tools/master/assests/screenshots/Tools-3.jpeg",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TPYE.GITHUB,
+        url: "https://github.com/deeppatel234/tools",
+      },
+      {
+        type: ICON_TPYE.WEBSITE,
+        url: "https://deeppatel234.github.io/tools",
+      },
+    ],
+  },
+  {
+    name: "MD Editor React",
+    description: `
             Markdown Editor for ReactJS. create a markdown with live preview and customized menu bar.
         `,
-        badges: [
-          {
-            link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/dt/md-editor-react.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/npm/v/md-editor-react.svg?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/bundlephobia/min/md-editor-react?style=flat-square",
-          },
-          {
-            link: "https://img.shields.io/bundlephobia/minzip/md-editor-react?style=flat-square",
-          },
-        ],
-        screenshots: [
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-1.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-2.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/MD-Editor-3.png?raw=true",
-            },
-        ],
-        links: [
-            {
-                type: ICON_TPYE.GITHUB,
-                url: "https://github.com/deeppatel234/md-editor-react",
-            },
-            {
-                type: ICON_TPYE.NPM,
-                url: "https://www.npmjs.com/package/md-editor-react",
-            },
-        ],
-    },
-    {
-        name: "EditMyMd",
-        description: `
-            Easily manage your GitHub and GitLab project documentation. With EditMyMD you can manage your all markdown files.
-        `,
-        screenshots: [
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-1.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-2.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-3.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-4.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-5.png?raw=true",
-            },
-            {
-                link: "https://github.com/deeppatel234/deeppatel234.github.io/blob/development/src/screenshots/EditMyMd-6.png?raw=true",
-            },
-        ],
-        links: [
-            {
-                type: ICON_TPYE.GITHUB,
-                url: "https://github.com/deeppatel234/editmymd",
-            },
-            {
-                type: ICON_TPYE.WEBSITE,
-                url: "https://www.editmymd.me/",
-            },
-        ],
-    },
+    badges: [
+      {
+        link: "https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/dt/md-editor-react.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/npm/v/md-editor-react.svg?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/bundlephobia/min/md-editor-react?style=flat-square",
+      },
+      {
+        link: "https://img.shields.io/bundlephobia/minzip/md-editor-react?style=flat-square",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/md-editor-react/master/assets/screenshots/MD-Editor-1.png",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/md-editor-react/master/assets/screenshots/MD-Editor-2.png",
+      },
+      {
+        link: "https://raw.githubusercontent.com/deeppatel234/md-editor-react/master/assets/screenshots/MD-Editor-3.png",
+      },
+    ],
+    links: [
+      {
+        type: ICON_TPYE.GITHUB,
+        url: "https://github.com/deeppatel234/md-editor-react",
+      },
+      {
+        type: ICON_TPYE.NPM,
+        url: "https://www.npmjs.com/package/md-editor-react",
+      },
+    ],
+  },
 ];
 
 const work = `
     <div id="work-page">
         ${projects
-            .map(({ name, description, screenshots, links, badges = [] }) => {
-                return `
+          .map(({ name, description, screenshots, links, badges = [] }) => {
+            return `
                     <div class="project-card">
                         <div class="first-col">
                             <h1 class="title">
@@ -319,7 +339,7 @@ const work = `
                             <p class="badges">
                               ${badges
                                 .map(({ link }) => {
-                                    return `
+                                  return `
                                     <img src="${link}" />
                                 `;
                                 })
@@ -330,16 +350,17 @@ const work = `
                             </p>
                             <div class="image-slide">
                                 ${screenshots
-                                    .map(({ link }) => {
-                                        return `
+                                  .map(({ link }) => {
+                                    return `
                                         <img class="screenshot img-shadow" src="${link}" />
                                     `;
-                                    })
-                                    .join("")}
+                                  })
+                                  .join("")}
                             </div>
                         </div>
                         <div class="secound-col">
-                          ${links.map(({ url, type }) => {
+                          ${links
+                            .map(({ url, type }) => {
                               return `
                                 <a target="_blank" href="${url}">
                                   <div>
@@ -350,12 +371,13 @@ const work = `
                                   </div>
                                 </a>
                               `;
-                          }).join("")}
+                            })
+                            .join("")}
                         </div>
                     </div>
                 `;
-            })
-            .join("")}
+          })
+          .join("")}
     </div>
 `;
 
