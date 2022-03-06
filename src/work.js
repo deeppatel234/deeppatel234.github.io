@@ -1,9 +1,3 @@
-// React-context-devtool
-// webpack-report
-// md-editor-React
-// expensy
-// editmymd
-
 const ICON_TYPE = {
   GITHUB: "GITHUB",
   CHROME: "CHROME",
@@ -152,10 +146,10 @@ const projects = [
       },
     ],
     links: [
-      // {
-      //   type: ICON_TYPE.GITHUB,
-      //   url: "https://github.com/deeppatel234/fire-dashboard",
-      // },
+      {
+        type: ICON_TYPE.GITHUB,
+        url: "https://github.com/deeppatel234/fire-dashboard",
+      },
       {
         type: ICON_TYPE.CHROME,
         url: "https://chrome.google.com/webstore/detail/fire-dashboard/ljpgbnpckoolgelpcbpfcafklbpkodeg",

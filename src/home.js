@@ -10,10 +10,10 @@ const home = `
                 I’m <span class="text-primary">Deep Patel</span>,
             </div>
             <div>
-                Javascript Developer.
+                Front End Engineer.
             </div>
             <div class="sub-footer">
-                Front End Developer | NodeJS Developer
+                ReactJS Developer | NodeJS Developer
             </div>
             <a
                 class="contect-me-footer"

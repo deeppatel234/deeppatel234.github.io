@@ -2,12 +2,13 @@ import "./index.scss";
 
 import home from "./home";
 import work from "./work";
+import resume from "./resume";
 
 const rootContent = document.getElementById("root-content");
 const menubarElement = document.getElementById("menubar");
 const navBarElement = document.getElementById("nav-bar");
 const overlayElement = document.getElementById("overlay");
-const routes = ["home", "work"];
+const routes = ["home", "work", "resume"];
 
 const updateNav = to => {
     const page = to.replace("#", "");
@@ -35,6 +36,8 @@ const navigate = to => {
 
     if (to === "#work") {
         dom = work;
+    } else if (to === "#resume") {
+        dom = resume;
     } else {
         dom = home;
     }
