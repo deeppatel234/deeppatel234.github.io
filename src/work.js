@@ -136,14 +136,26 @@ const projects = [
     ],
     screenshots: [
       {
-        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-1.jpeg",
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/bookmark-raw.jpeg?raw=true",
       },
       {
-        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-2.jpeg",
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/new-tab-bh-raw.jpeg?raw=true",
       },
       {
-        link: "https://raw.githubusercontent.com/deeppatel234/deeppatel234.github.io/development/screenshots/Fire-Dashboard-3.jpeg",
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/workspace-raw.jpeg?raw=true",
       },
+      {
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/search-raw.jpeg?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/theme-support-raw.jpeg?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/unsplash-raw.jpeg?raw=true",
+      },
+      {
+        link: "https://github.com/deeppatel234/fire-dashboard/blob/main/store-assets/screenshots/firebase-raw.jpeg?raw=true",
+      }
     ],
     links: [
       {
