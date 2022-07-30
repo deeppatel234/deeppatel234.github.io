@@ -99,7 +99,7 @@ const data = {
         tags: ["React JS", "Chrome API"],
         description: [
           "Devtool for debug ReactJS Context and useReducer API. Devtool have raw, tree and diff views of your JSON data. It allow you can dispatch actions from devtool in useReducer hook.",
-          "10,000+ downloads in chrome web store",
+          "20,000+ downloads in chrome web store",
         ],
       },
       {
